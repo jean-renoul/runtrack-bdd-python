@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 cursor = mydb.cursor()
 cursor.execute("SELECT * FROM employe WHERE salaire >= 3000")
 employes_riches = cursor.fetchall()
-cursor.close()
+cursor.close()  
 
 print (employes_riches)
 
